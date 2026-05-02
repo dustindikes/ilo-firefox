@@ -7,7 +7,7 @@ browser.contextMenus.create({
 browser.contextMenus.onClicked.addListener((info, tab) => {
     if (info.menuItemId === "translate-with-ilo") {
         browser.tabs.create({
-            url : "https://0xdstn.site/ilo/?t=" + encodeURIComponent(info.selectionText.replaceAll("\r\n","\\n"))
+            url : "https://dustindikes.github.io/ilo/?t=" + encodeURIComponent(info.selectionText.replaceAll("\r\n","\\n"))
         });
     }
 });
